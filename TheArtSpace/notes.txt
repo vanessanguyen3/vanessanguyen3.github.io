@@ -1,0 +1,24 @@
+Login & signup 
+
+Fill out the form and save a new post to the DB!
+
+Showing all the posts from the DB on the homepage
+
+
+High Priority
+Login/signup: Done
+     api route /login and /signup : Done
+     handlebar route give them handelbars
+
+Page where you can make a new blog post - FORM and save to DB
+
+On the homepage show all blog posts from DB
+
+
+
+
+
+Phase 2:
+
+Favoriting
+Comments

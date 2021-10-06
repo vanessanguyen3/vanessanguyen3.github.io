@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art Space</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+=======
+  <link rel="stylesheet" href="/css/bootstrapTheme.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="flex-column min-100-vh">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">The Art Space</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="li-inline nav-item"><a href="/">Gallery</a></li>
+        <li class="li-inline nav-item"><a href="/">Coments</a></li>
+        <li class="li-inline nav-item"><a href="/login">Login</a></li>
+        <li class="li-inline nav-item"><a href="/" >Logout</a></li> 
+      </ul>
+        <!-- Start of Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-user">Login</h4>
+        </div>
+        <div class="modal-body">
+          <h2>Fill out the form to login</h2>
+          <form id="wtLogin">
+            <div class="form-group">
+              <label for="user">Email address:</label>
+              <input name="user" type="email" class="form-control" id="user">
+            </div>
+            <div class="form-group">
+              <label for="pass">Password:</label>
+              <input name="pass" type="password" class="form-control" id="pass">
+            </div>
+            <button type="/login" class="btn btn-default" >Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="/Login" class="btn btn-default" data-dismiss="modal">close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  {{!-- End of modal --}}
+=======
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+        <a class="nav-link" href="/Homepage">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/gallery">Gallery </a> 
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/login">Login </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" id="logout-link">Logout </a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="jumbotron jumbotron-fluid bg-primary text-white">
+      <div class="container">
+        <h1 class="display-4">The Art Space</h1>
+        <p class="lead">An art blog and virtual exhibit for local artists to display their work and for lovers of art to to connect to the artists, like, buy, collaborate.</p>
+      </div>
+    </div>
+    <h1 class="app-title"><a href="/"></a></h1>
+  </header>
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="flex-row justify-center">
+    &copy; The Art Space
+  </footer>
+</body>
+
+</html>
+<script src="/"></script>
+

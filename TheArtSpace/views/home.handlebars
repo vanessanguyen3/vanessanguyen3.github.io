@@ -1,0 +1,35 @@
+<button id="createArtBtn" >Create New Art Post</button>
+
+<section id="artForm" style="display:none;">
+  <h2>Create New Art Post</h2>
+
+  <form class="new-art-form">
+    <div>
+      <label for="art-title">Title</label>
+      <input type="text" id="art-title" name="art-title" />
+    </div>
+    <div>
+      <label for="content" >Content</label>
+      <textarea id="content" name="content" rows="6" cols="50"></textarea>
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+
+{{#if art.length}}
+<section id="blogArt">
+  <h2>Your Art</h2>
+  <ol>
+    {{#each art as |art|}}
+    <li>
+      {{> art-info art}}
+      <a href="/homepage/edit/{{post.id}}" class="edit-link">Edit art post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/js/add-art.js"></script>
+<script src="/js/comments.js"></script>
+<script src="/js/login.js"></script>
